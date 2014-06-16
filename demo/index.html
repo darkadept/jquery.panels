@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Panels</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../src/jquery.panels.js"></script>
+</head>
+<body>
+
+<div class="menu">
+	<a class="active item" data-target="one" href="#">one</a>
+	<a class="item" data-target="two" href="#">two</a>
+</div>
+
+<div class="panel one">
+	panel one
+</div>
+
+<div class="panel two">
+	panel two
+</div>
+
+<script>
+	$(function() {
+		$(".menu").panels({
+			propertyName: "a custom value"
+		});
+	});
+
+</script>
+
+</body>
+</html>
